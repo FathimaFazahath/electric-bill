@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Domestic electricity Bill Calculator</title>
+	<link rel="stylesheet" type="text/css" href="Bill.css">
+</head>
+<body>	
+		<div class="MyDiv">
+			<Div class="Item">
+				<h1>Welcome!</h1>
+				<h2>Domestic Electricity Bill Calculator</h2>
+				<table class="center">
+					<tr>
+						<td colspan="2"><br><br><img src="img01.jpg"></td></tr>
+					<tr>
+						<td><p>Previous Reading</p></td>
+						<td><input type="number"  id="PUnit" placeholder="Units in kWh" min="0"></td>
+					</tr>
+					<tr>
+						<td><p>Current Reading</p></td>
+						<td><input type="number"  id="CUnit" placeholder="Units in kWh"  min="0"></td>
+					</tr>
+					<tr>
+						<td>
+							<button onclick="document.getElementById('PUnit').value='',document.getElementById('CUnit').value=''">clear
+						</button>
+					</td>
+						<td><button onclick="checkUnit()">Calculate my Bill</button>
+							
+					</tr>
+					<tr><td colspan="2"><div id="UnitResul"></div><br><div id="UnitPrice"></div></td></tr>
+
+					<tr>
+						<td><a href="https://roar.media/english/life/reports/electricity-bill-calculated-analysis">More information about my bill</a></td>
+						<td><a href="https://ceb.lk/bill-calculation-commercial/en">Go to CEB web side</a></td>
+					</tr>
+				</table>
+			<h5>Created By:Fathima Fasahath</h5>
+			</Div>
+		</div>
+		<script type="text/javascript" src="Bill.js"></script>
+</body>
+</html>
